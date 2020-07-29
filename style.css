@@ -1,0 +1,53 @@
+/* Import Custom Font */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+/* General */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px auto 15px;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Loading Spinner */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+  margin: 0.85rem 30%;
+}
+.image-container img {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Media Query: L Smartphone */
+@media screen and (max-width: 600px) {
+  .image-container {
+    margin: 0.85rem;
+  }
+}
